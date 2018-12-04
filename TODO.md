@@ -9,3 +9,5 @@ Version 2.0
 
 * Rename `finalize()` and `setDefaults()` to something like `arilesPreRead()`,
   `arilesPostRead()`. Add the same functionality for writing configuration files.
+
+* Rename header `ariles/ariles_all.h` to `ariles/all.h`

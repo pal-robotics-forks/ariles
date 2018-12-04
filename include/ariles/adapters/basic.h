@@ -215,12 +215,20 @@ namespace ariles
     template<class t_Flags>
         void ARILES_VISIBILITY_ATTRIBUTE setDefaults(float & entry, const t_Flags & /*param*/)
     {
+#ifdef ARILES_DEFAULT_FLOAT_VALUE_OVERRIDE
+        entry = ARILES_DEFAULT_FLOAT_VALUE_OVERRIDE;
+#else
         entry = ARILES_DEFAULT_FLOAT_VALUE;
+#endif
     }
 
     template<class t_Flags>
         void ARILES_VISIBILITY_ATTRIBUTE setDefaults(double & entry, const t_Flags & /*param*/)
     {
+#ifdef ARILES_DEFAULT_FLOAT_VALUE_OVERRIDE
+        entry = ARILES_DEFAULT_DOUBLE_VALUE_OVERRIDE;
+#else
         entry = ARILES_DEFAULT_DOUBLE_VALUE;
+#endif
     }
 }
